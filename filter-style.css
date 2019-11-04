@@ -9,7 +9,7 @@
 }
 
 .ajax-loader {
-	background-image:url(images/ajax-loader.gif);
+	background-image:url(ajax-loader.gif);
 	background-position: 50% 50%;
 	position: absolute;
 	width: 17%;
