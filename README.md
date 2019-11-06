@@ -7,8 +7,8 @@ No translation is added.
 The code was developped for an application where price is not used.
 <ul>
   <li>The selectboxes can be used in any desired order.</li>
-  <li>Once all three selectboxes are defined the select options of each selectbox are determined by the selected value of the other two selectboxes.</li>
-  <li>Once all three selectboxes are defined the selections can be changed at any time and change triggers a new load of the calendar for the updated select</li>
+  <li>The select options of each selectbox are determined by the selected value of the other two selectboxes.</li>
+  <li>The selections can be changed at any time and change triggers a new load of the calendar for the updated select</li>
 </ul>
 <h2>How to use</h2>
 Place the shortcode [eaf-ea-filter] just before the [ea_bootstrap] shortcode.
