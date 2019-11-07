@@ -105,7 +105,7 @@ function eaf_ea_filter_options () {
 		$location_ids = $filter_results['location_ids'];
 		$service_ids = $filter_results['service_ids'];
 		
-		if(empty($_GET['eafworker']) && count($worker_ids) == 1) $eafget['eafworker'] = $worker_ids[0];
+		if(empty($_GET['eafworker']) && count($worker_ids) == 1) $eafget['worker'] = $worker_ids[0];
 		if(empty($_GET['eaflocation']) && count($location_ids) == 1) $eafget['location'] = $location_ids[0];	
 		if(empty($_GET['eafservice']) && count($service_ids) == 1) $eafget['service'] = $service_ids[0];
 		if (!empty($eafget)) {
@@ -142,7 +142,7 @@ function eaf_ea_filter_options () {
 function eaf_ea_filter($connections, $eafget=array()) {	
 	
 		//set $_GET when select is determined by option count
-		if(isset($eafget['eafworker'])) $_GET['eafworker'] = $eafget['eafworker'];
+		if(isset($eafget['eafworker'])) $_GET['eafworker'] = $eafget['fworker'];
 		if(isset($eafget['eaflocation'])) $_GET['eaflocation'] = $eafget['location'];
 		if(isset($eafget['eafservice'])) $_GET['eafservice'] = $eafget['service'];
 		
