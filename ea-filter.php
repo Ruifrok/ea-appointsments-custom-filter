@@ -158,13 +158,13 @@ function eaf_ea_filter($connections, $eafget=array()) {
 		
 		//Two options selected
 		elseif (empty($_GET['eaflocation'])) $connections = array_filter($connections, function($connection) {
-			return ($connection->service == $_GET['eafservice'] || $connection->worker == $_GET['eafworker']);
+			return ($connection->service == $_GET['eafservice'] && $connection->worker == $_GET['eafworker']);
 			});
 		elseif (empty($_GET['eafworker'])) $connections = array_filter($connections, function($connection) {
-			return ($connection->location == $_GET['eaflocation'] || $connection->service == $_GET['eafservice']);
+			return ($connection->location == $_GET['eaflocation'] && $connection->service == $_GET['eafservice']);
 		});
 		elseif (empty($_GET['eafservice'])) $connections = array_filter($connections, function($connection) {
-			return ($connection->worker == $_GET['eafworker'] || $connection->location == $_GET['eaflocation']);
+			return ($connection->worker == $_GET['eafworker'] && $connection->location == $_GET['eaflocation']);
 		});
 		
 		//Three options selected
